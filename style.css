@@ -1,0 +1,77 @@
+body {
+	font-family: Roboto, serif;
+	background-color: #0f1722;
+	color: #d0d7e0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.calc-body {
+	background-color: #1c2530;
+	padding: 1em;
+	width: 450px;
+	height: 650px;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	gap: 1em;
+}
+
+.screen {
+	background-color: #eaeaea;
+	grid-column: span 4;
+	grid-row: span 1;
+	color: #1c2530;
+	border-radius: 2px;
+}
+
+button {
+	grid-column: span 1;
+	grid-row: span 1;
+	font-size: 30px;
+	border: none;
+	border-radius: 2px;
+}
+
+.zero {
+	grid-column: span 2;
+	grid-row: 6;
+}
+
+.period {
+	grid-column: 3;
+	grid-row: 6;
+	background-color: #7890b0;
+}
+.equals {
+	grid-column: 4;
+	grid-row: 6;
+	background: #4caf50;
+	color: #eaeaea;
+}
+.add {
+	grid-column: 4;
+	grid-row: 5;
+}
+.subtract {
+	grid-column: 4;
+	grid-row: 4;
+}
+.multiply {
+	grid-column: 4;
+	grid-row: 3;
+}
+.operator {
+	background-color: #78a8d8;
+	color: #0f1722;
+}
+.special {
+	background-color: #345678;
+	color: #eaeaea;
+}
+.clear {
+	background-color: #783434;
+	color: #eaeaea;
+}
