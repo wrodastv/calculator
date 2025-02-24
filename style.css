@@ -25,6 +25,8 @@ body {
 	grid-row: span 1;
 	color: #1c2530;
 	border-radius: 2px;
+	text-align: end;
+	font-size: 5rem;
 }
 
 button {
