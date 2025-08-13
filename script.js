@@ -22,6 +22,25 @@ const nineEl = document.querySelector('.nine');
 
 let digitOne = 0;
 let digitTwo = 0;
-let operator = 0;
+let operator = null;
+let result = 0;
 
-screenEl.textContent = '0';
+// Functions
+// Function to clear screen
+// function to add digits to the number
+// function to calculate the product
+
+// Event Listeners
+clearEl.addEventListener('click', function (e) {
+	resetcalculator();
+});
+polarityEl.addEventListener('click', function (e) {
+	number = screenEl.value;
+	screenEl.textContent = number * -1;
+});
+moduloEl.addEventListener('click', function(e) {
+	operator = "%";
+})
+divideEl.addEventListener('click', function(e) {
+	operator = "/"
+})
